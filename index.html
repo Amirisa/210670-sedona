@@ -5,8 +5,105 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="header-nav">
+      	<ul>
+      		<li><a href="#"></a>Информация</li>
+      		<li><a href="#"></a>Фото и видео</li>
+      		<li><a href="#"></a>Карта штата</li>
+      		<li><a href="#"></a>Гостиницы</li>
+      	</ul>
+      	<div class="header-logo">
+      		<img src="http://placehold.it/150x100" alt="">
+      	</div>
+      </nav>
+    </header>
+    <main class="main-menu">
+      <div class="main-logo"></div>
+      <p class="about">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</p>
+      <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <section class="feautures">
+        <div class="feauture-basic">
+          <h3>Настоящий<br>гордок</h3>
+          <span class="basic-number">-№1-</span>
+          <p class="basic-descript">Седона - не аттрацион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="picture-town"></div>
+      	<div class="feauture-items">
+      	  <div class="item-home">
+      	  	<h3>Жилье</h3>
+      	  	<p class="item-descript">Рекомендуем пожить в насоящем мотеле, все как в кино!</p>
+      	  </div>
+      	  <div class="item-food">
+      	  	<h3>Еда</h3>
+      	  	<p class="item-descript">Всегда заказыайте фирменныйй бургер, вы не разочаруетесь!</p>
+      	  </div>
+      	  <div class="item-souvenir">
+      	  	<h3>Сувениры</h3>
+      	  	<p class="item-descript">Не только китайского, но и местного производства!</p>
+      	  </div>
+      	</div>
+      	<div class="picture-mount"></div>
+      	<div class="feauture-basic">
+      		<h3>Там есть<br>мост дьявола</h3>
+      		<span class="basic-number">-№2-</span>
+      		<p class="basic-descript">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      	</div>
+      	<div class="feauture-extra">
+      	  <div class="extra-square">
+      	  	<h3>Небольшая<br>площадь</h3>
+      	  	<span class="extra-number">-№3</span>
+      	  	<p class="extra-descript">Все достопримеча-тельности находятся очень близко</p>
+      	  </div>
+      		<div class="extra-road">
+      			<h3>Красивая<br>дорога</h3>
+      	  	<span class="extra-number">-№4</span>
+      	  	<p class="extra-descript">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      		</div>
+      		<div class="extra-tourist">
+      			<h3>Мало<br>туристов</h3>
+      	  	<span class="extra-number">-№5</span>
+      	  	<p class="extra-descript">Большинство едет в Гранд Каньон и толпится там</p>
+      		</div>
+      	</div>
+      </section>
+    	<div class="order">
+    	  <div class="order-quest">
+    		  <h2>Заинтересовались?</h2>
+    		  <p class="order-descript">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    		</div>
+    		<div class="order-search">
+    			<h3>Поиск гостиницы в Седоне</h3>
+    		</div>
+    		<div class="order-form">
+    			<form action="https://echo.htmlacademy.ru" method="get">
+    				<label for="date-arrive">Дата заезда:</label>
+    				<input type="text" name="date-arrive" id="date-arrive" value=" 24 апреля 2017"><br>
+    				<label for="date-depart">Дата выезда:</label>
+    				<input type="text" name="date-depart" id="date-depart" value="4 июля 2017"><br>
+    				<label for="adult">Взрослые:</label>
+    				<input type="text" name="adult" id="adult" value="2">
+    				<label for="children">Дети:</label>
+    				<input type="text" name="children" id="children" value="0"><br>
+    				<input class="btn" type="submit" value="Найти">
+    			</form>
+    		</div>
+    		<div class="map"></div>
+    	</div>
+    </main>
+    <footer class="main-footer">
+    	<section class="footer-contacts">
+    		<a href="#" class="contacts">#visitsedona</a>
+    	</section>
+    	<section class="footer-social">
+    		<a href="#" class="social-btn social-btn-tw">Twitter</a>
+    		<a href="#" class="social-btn social-btn-fb">Facebook</a>
+    		<a href="#" class="social-btn social-btn-yt">Youtube</a>
+    	</section>
+    	<section class="footer-copyright">
+    		<span class="copyright">website by</span>
+    		<img src="http://placehold.it/150x100" alt="">
+    	</section>
+    </footer>
   </body>
 </html>
