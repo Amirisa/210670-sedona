@@ -14,52 +14,49 @@
       		<li><a href="#">Гостиницы</a></li>
       	</ul>
       	<div class="header-logo">
-      		<img src="http://placehold.it/150x100" alt="">
+      		<a href="index.html"><img src="http://placehold.it/150x100" alt=""></a>
       	</div>
       </nav>
     </header>
     <main class="main-menu">
-      <div class="form-search">
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <div class="search-type">
-            <div class="seacrh-name">Инфраструктура:</div>
-            <ul class="search-list">
-              <li>
-                <input type="checkbox" name="pool" id="pool" checked>
-                <label for="pool">Бассейн</label></li>
-              <li>
-                <input type="checkbox" name="parking" id="parking">
-                <label for="parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="wi-fi">
-                <label for="wi-fi">Wi-Fi</label>
-              </li>
-            </ul> 
-          </div>
-          <div class="search-type">
-            <div class="seacrh-name">Тип жилья:</div>
-            <ul class="search-list">
-              <li>
-                <input type="checkbox" name="hotel" id="hotel" checked>
-                <label for="hotel">Гостиница</label></li>
-              <li>
-                <input type="checkbox" name="motel" id="motel" checked>
-                <label for="motel">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="apartm" id="apartm" checked>
-                <label for="apartm">Апартаменты</label>
-              </li>
-            </ul>
-          </div>
-          <div class="search-type">
-            <div class="seacrh-name">Стоимость в сутки (р):</div>
-            <!-- пока не знаю как оформить -->
-            <input class="cost-btn" type="submit" value="Показать">
-          </div>
-        </form>
-      </div>
+      <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
+        <fieldset class="search-type">
+          <legend class="seacrh-name">Инфраструктура:</legend>
+          <ul class="search-list">
+            <li>
+              <input type="checkbox" name="pool" id="pool" checked>
+              <label for="pool">Бассейн</label></li>
+            <li>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+              <label for="wi-fi">Wi-Fi</label>
+            </li>
+          </ul> 
+        </fieldset>
+        <div class="search-type">
+          <div class="seacrh-name">Тип жилья:</div>
+          <ul class="search-list">
+            <li>
+              <input type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label></li>
+            <li>
+              <input type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input type="checkbox" name="apartm" id="apartm" checked>
+              <label for="apartm">Апартаменты</label>
+            </li>
+          </ul>
+        </div>
+        <div class="search-type">
+          <div class="seacrh-name">Стоимость в сутки (р):</div>
+          <input class="cost-btn" type="submit" value="Показать">
+        </div>
+      </form>
       <div class="search-nav">
         <div class="search-sum">Найдено: 3</div>
         <div class="search-sort">
@@ -68,8 +65,9 @@
           <a href="#" class="not-active">По типу</a>
           <a href="#" class="not-active">По рейтингу</a>
         </div>
-        <div>
-          <!-- две стелочки -->
+        <div class="search-sort-btn">
+          <a href="#" class="sort-btn"></a>
+          <a href="#" class="sort-btn-active"></a>
         </div>
       </div>
       <div class="search-result">
@@ -140,7 +138,7 @@
     	</section>
     	<section class="footer-copyright">
     		<span class="copyright">website by</span>
-    		<img src="http://placehold.it/150x100" alt="">
+    		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
     	</section>
     </footer>
   </body>

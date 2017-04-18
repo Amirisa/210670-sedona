@@ -20,7 +20,7 @@
     </header>
     <main class="main-menu">
       <div class="main-logo"></div>
-      <p class="about">Седона - небольшой городок в Аризоне, <br> заслуживающий большего!</p>
+      <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
       <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <section class="feautures">
         <div class="feauture-basic">
@@ -29,42 +29,44 @@
           <p class="basic-descript">Седона - не аттрацион для туристов, там течет своя жизнь</p>
         </div>
         <div class="picture-town"></div>
-      	<div class="feauture-items">
-      	  <div class="item-home">
-      	  	<h3>Жилье</h3>
-      	  	<p class="item-descript">Рекомендуем пожить в насоящем мотеле, все как в кино!</p>
-      	  </div>
-      	  <div class="item-food">
-      	  	<h3>Еда</h3>
-      	  	<p class="item-descript">Всегда заказыайте фирменныйй бургер, вы не разочаруетесь!</p>
-      	  </div>
-      	  <div class="item-souvenir">
-      	  	<h3>Сувениры</h3>
-      	  	<p class="item-descript">Не только китайского, но и местного производства!</p>
-      	  </div>
+      </section>
+      <section class="feautures"> 
+      	<div class="feauture-home">
+      	  <h3>Жилье</h3>
+      	  <p class="feauture-descript">Рекомендуем пожить в насоящем мотеле, все как в кино!</p>
       	</div>
+      	<div class="feauture-food">
+      	  <h3>Еда</h3>
+      	  <p class="feauture-descript">Всегда заказыайте фирменныйй бургер, вы не разочаруетесь!</p>
+      	</div>
+      	<div class="feauture-souvenir">
+      	  <h3>Сувениры</h3>
+      	  <p class="feauture-descript">Не только китайского, но и местного производства!</p>
+      	</div>
+      </section>
+			<section class="feautures">
       	<div class="picture-mount"></div>
       	<div class="feauture-basic">
       		<h3>Там есть<br>мост дьявола</h3>
       		<span class="basic-number">-№2-</span>
       		<p class="basic-descript">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       	</div>
-      	<div class="feauture-extra">
-      	  <div class="extra-square">
-      	  	<h3>Небольшая<br>площадь</h3>
-      	  	<span class="extra-number">-№3</span>
-      	  	<p class="extra-descript">Все достопримеча-тельности находятся очень близко</p>
-      	  </div>
-      		<div class="extra-road">
-      			<h3>Красивая<br>дорога</h3>
-      	  	<span class="extra-number">-№4</span>
-      	  	<p class="extra-descript">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      		</div>
-      		<div class="extra-tourist">
-      			<h3>Мало<br>туристов</h3>
-      	  	<span class="extra-number">-№5</span>
-      	  	<p class="extra-descript">Большинство едет в Гранд Каньон и толпится там</p>
-      		</div>
+      </section>
+			<section class="feautures">
+      	<div class="feauture-square">
+      	  <h3>Небольшая<br>площадь</h3>
+      	  <span class="feauture-number">-№3</span>
+      	  <p class="feauture-descript">Все достопримеча-тельности находятся очень близко</p>
+      	</div>
+        <div class="feauture-road">
+      		<h3>Красивая<br>дорога</h3>
+      	  <span class="feauture-number">-№4</span>
+      	  <p class="feauture-descript">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      	</div>
+      	<div class="feauture-tourist">
+      		<h3>Мало<br>туристов</h3>
+      	  <span class="feauture-number">-№5</span>
+      	  <p class="feauture-descript">Большинство едет в Гранд Каньон и толпится там</p>
       	</div>
       </section>
     	<div class="order">
@@ -76,15 +78,29 @@
     			<h3>Поиск гостиницы в Седоне</h3>
     		</div>
     		<div class="order-form">
-    			<form action="https://echo.htmlacademy.ru" method="get">
-    				<label for="date-arrive">Дата заезда:</label>
-    				<input type="text" name="date-arrive" id="date-arrive" value=" 24 апреля 2017"><br>
-    				<label for="date-depart">Дата выезда:</label>
-    				<input type="text" name="date-depart" id="date-depart" value="4 июля 2017"><br>
-    				<label for="adult">Взрослые:</label>
-    				<input type="text" name="adult" id="adult" value="2">
-    				<label for="children">Дети:</label>
-    				<input type="text" name="children" id="children" value="0"><br>
+    			<form action="https://echo.htmlacademy.ru" method="get" class="order-form-choise">
+    			  <fieldset class="arrive">
+    				  <label for="date-arrive">Дата заезда:</label>
+    				  <input type="text" name="date-arrive" id="date-arrive" value=" 24 апреля 2017">
+    				  <input type="button" name="btn-calendar" class="btn-calendar">
+    				</fieldset>
+    				<fieldset class="depart">
+    				  <label for="date-depart">Дата выезда:</label>
+    				  <input type="text" name="date-depart" id="date-depart" value="4 июля 2017">
+    				  <input type="button" name="btn-calendar" class="btn-calendar">
+    				</fieldset>
+    				<fieldset class="adult">
+    				  <label for="adult">Взрослые:</label>
+    				  <input type="button" name="btn-minus" class="btn-minus" value="-">
+    				  <input type="text" name="adult" id="adult" value="2">
+    				  <input type="button" name="btn-plus" class="btn-plus" value="+">
+    				</fieldset>
+    				<fieldset class="children">
+    				  <label for="children">Дети:</label>
+    				  <input type="button" name="btn-minus" class="btn-minus" value="-">
+     				  <input type="text" name="children" id="children" value="0">
+     				  <input type="button" name="btn-plus" class="btn-plus" value="+">
+    				</fieldset>
     				<input class="btn" type="submit" value="Найти">
     			</form>
     		</div>
@@ -102,7 +118,7 @@
     	</section>
     	<section class="footer-copyright">
     		<span class="copyright">website by</span>
-    		<img src="http://placehold.it/150x100" alt="">
+    		<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="HTML Academy"></a>
     	</section>
     </footer>
   </body>
