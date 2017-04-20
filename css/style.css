@@ -1,0 +1,22 @@
+body {
+	font-family: PT Sans;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	font-weight: 400;
+}
+
+.title {
+	font-family: PT Sans;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 700;
+}
+.title-order {
+	font-family: PT Sans;
+	font-size: 30px;
+	line-height: 24px;
+	color: #000000;
+	font-weight: 700;
+}
