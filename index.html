@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="main-container">
-      <header class="main-header">
+      <header class="main-header wrapper">
         <nav class="header-nav">
         	<ul class="clearfix">
         		<li><a href="#"></a>Информация</li>
@@ -76,42 +77,38 @@
         	</div>
         </section>
       	<div class="order">
-      	  <div class="order-quest">
-      		  <h2 class="title-order">Заинтересовались?</h2>
-      		  <p class="order-descript">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      	  </div>
-      	  <div class="order-form">
-      	  	<div class="order-btn"><a href="#">Поиск гостиницы в Седоне</a></div>
-      			<form action="https://echo.htmlacademy.ru" method="get" class="order-form-choise">
-      			  <fieldset class="arrive">
-      				  <label for="date-arrive">Дата заезда:</label>
-      				  <input type="text" name="date-arrive" id="date-arrive" value=" 24 апреля 2017">
-      				  <input type="button" name="btn-calendar" class="btn-calendar">
-      				</fieldset>
-      				<fieldset class="depart">
-      				  <label for="date-depart">Дата выезда:</label>
-      				  <input type="text" name="date-depart" id="date-depart" value="4 июля 2017">
-      				  <input type="button" name="btn-calendar" class="btn-calendar">
-      				</fieldset>
-      				<fieldset class="adult">
-      				  <label for="adult">Взрослые:</label>
-      				  <input type="button" name="btn-minus" class="btn-minus" value="-">
-      				  <input type="text" name="adult" id="adult" value="2">
-      				  <input type="button" name="btn-plus" class="btn-plus" value="+">
-      				</fieldset>
-      				<fieldset class="children">
-      				  <label for="children">Дети:</label>
-      				  <input type="button" name="btn-minus" class="btn-minus" value="-">
-       				  <input type="text" name="children" id="children" value="0">
-       				  <input type="button" name="btn-plus" class="btn-plus" value="+">
-      				</fieldset>
-      				<input class="btn" type="submit" value="Найти">
-      			</form>
-      		</div>
-      		<div class="map">
-            <img src="img/map.jpg" width="1200" height="593" alt="Карта">  
-          </div>
+      		<h2 class="title-order">Заинтересовались?</h2>
+      		<p class="order-descript">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      	  <a class="order-btn" href="#">Поиск гостиницы в Седоне</a>
+    			<form action="https://echo.htmlacademy.ru" method="get" class="order-form-choise">
+    			  <fieldset class="arrive">
+    				  <label for="date-arrive">Дата заезда:</label>
+    				  <input type="text" name="date-arrive" id="date-arrive" value=" 24 апреля 2017">
+    				  <input type="button" name="btn-calendar" class="btn-calendar">
+    				</fieldset>
+    				<fieldset class="depart">
+    				  <label for="date-depart">Дата выезда:</label>
+    				  <input type="text" name="date-depart" id="date-depart" value="4 июля 2017">
+    				  <input type="button" name="btn-calendar" class="btn-calendar">
+    				</fieldset>
+    				<fieldset class="adult">
+    				  <label for="adult">Взрослые:</label>
+    				  <input type="button" name="btn-minus" class="btn-minus" value="-">
+    				  <input type="text" name="adult" id="adult" value="2">
+    				  <input type="button" name="btn-plus" class="btn-plus" value="+">
+    				</fieldset>
+    				<fieldset class="children">
+    				  <label for="children">Дети:</label>
+    				  <input type="button" name="btn-minus" class="btn-minus" value="-">
+     				  <input type="text" name="children" id="children" value="0">
+     				  <input type="button" name="btn-plus" class="btn-plus" value="+">
+    				</fieldset>
+    				<input class="btn" type="submit" value="Найти">
+    			</form>
       	</div>
+        <div class="map">
+            <img src="img/map.jpg" width="1200" height="593" alt="Карта">  
+        </div>
       </main>
       <footer class="main-footer clearfix">
       	<section class="footer-contacts">

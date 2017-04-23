@@ -7,6 +7,10 @@ body {
 	text-transform: uppercase;
 }
 
+/** {
+	outline: 2px solid red;
+}*/
+
 .clearfix::after {
 	content: "";
     display: table;
@@ -18,7 +22,7 @@ body {
 	margin: 0 auto;
 }
 
-.main-header {
+.wrapper {
 	padding-left: 72px;
 	padding-right: 72px;
 }
@@ -74,9 +78,9 @@ ul {
 	padding-right: 382px;
 }
 
-p {
+.feautures {
 	text-align: center;
-} 
+}
 
 .feauture-basic-town {
 	float: left;
@@ -128,39 +132,38 @@ p {
 	width: 400px;
 }
 
-.order-form {
-	margin: 0 312px;
-	width: 576px;
+.order {
+	text-align: center;
 }
 
 .order-btn {
-	background: #766357;
-	padding: 0 141px;
-}
-
-.order-btn a {
 	text-decoration: none;
 	font-size: 21px;
-	color: white;
 }
 
 .order-form-choise {
-	padding-right: 58px;
-	padding-left: 58px;
+	text-align: left;
+	width: 572px;
+	margin: 0 auto;
+
 }
+.main-footer {
+	text-align: center;
+	padding-right: 72px;
+	padding-left: 72px;
+}
+
 
 .footer-contacts {
 	float: left;
 	width: 240px;
-	margin-left: 73px;
+	margin-right: 88px;
 }
 
 
 .footer-social {
 	float: left;
-	width: 400px;
-	margin-left: 88px;
-	margin-right: 88px;
+	width: 400px;	
 }
 
 .footer-copyright{
@@ -177,12 +180,90 @@ p {
 	text-align: center;
 }
 
+.item-description .title {
+	text-align: left;
+}
+
 .title-order {
 	font-family: PT Sans;
 	font-size: 30px;
 	line-height: 24px;
 	color: #000000;
 	font-weight: 700;
-	text-align: center;
 }
 
+.form-search {
+	background-color: #000;
+	background-image: url("../img/filter-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.search-type {
+	margin: 0;
+}
+
+.search-type-structure {
+	float: left;
+	width: 240px;
+}
+
+.search-type-housing {
+	float: left;
+	width: 288px;
+}
+
+.search-type-cost {
+	float: right;
+	width: 328px;
+}
+
+.search-sum {
+	float: left;
+	width: 135px;
+}
+
+.search-sort {
+	float: left;
+	width: 363px;
+}
+
+.search-sort-btn {
+	float: right;
+	width: 241px;
+	text-align: right;
+}
+
+.item-picture {
+	float: left;
+	width: 135px;
+}
+
+.item-description {
+	float: left;
+	width: 363px;
+}
+
+.search-rate {
+	float: right;
+	width: 241px;
+}
+
+.item-type {
+	float: left;
+	width: 111px;
+}
+
+.item-cost{
+	float: right;
+	width: 141px;
+}
+
+.item-btn {
+	float: left;
+	width: 50%;
+}
+
+.search-rate {
+	text-align: right;
+}
