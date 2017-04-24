@@ -4,6 +4,171 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: 400;
+	text-transform: uppercase;
+}
+
+/** {
+	outline: 2px solid red;
+}*/
+
+.clearfix::after {
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.main-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
+.header-nav {
+	position: relative;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header-nav li {
+	float: left;
+	width: 128px;
+	padding-top: 16px;
+	font-weight: 700;
+}
+
+.header-nav li:first-child {
+	margin-right: 112px;
+}
+
+.header-nav li:nth-child(2) {
+	margin-right: 355px;
+}
+
+.header-nav li:last-child {
+	float: right;
+	text-align: right;	
+}
+
+.header-logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main-logo {
+	min-height: 508px;
+}
+
+.main-title {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 700;
+	text-align: center;
+	padding-left: 382px;
+	padding-right: 382px;
+}
+
+.feautures {
+	text-align: center;
+}
+
+.feauture-basic-town {
+	float: left;
+	width: 400px;
+}
+
+.picture-town {
+	float: right;
+	width: 800px;
+}
+
+.feauture-home {
+	float: left;
+	width: 400px;
+}
+
+.feauture-food {
+	float: left;
+	width: 400px;
+}
+
+.feauture-souvenir {
+	float: right;
+	width: 400px;
+}
+
+.picture-mount {
+	float: left;
+	width: 800px;
+}
+
+.feauture-basic-mount {
+	float: right;
+	width: 400px;
+}
+
+.feauture-square{
+	float: left;
+	width: 400px;
+}
+
+.feauture-road {
+	float: left;
+	width: 400px;
+}
+
+.feauture-tourist {
+	float: right;
+	width: 400px;
+}
+
+.order {
+	text-align: center;
+}
+
+.order-btn {
+	text-decoration: none;
+	font-size: 21px;
+}
+
+.order-form-choise {
+	text-align: left;
+	width: 572px;
+	margin: 0 auto;
+
+}
+.main-footer {
+	text-align: center;
+	padding-right: 72px;
+	padding-left: 72px;
+}
+
+
+.footer-contacts {
+	float: left;
+	width: 240px;
+	margin-right: 88px;
+}
+
+
+.footer-social {
+	float: left;
+	width: 400px;	
+}
+
+.footer-copyright{
+	float: right;
+	width: 240px;
 }
 
 .title {
@@ -12,11 +177,93 @@ body {
 	line-height: 26px;
 	color: #000000;
 	font-weight: 700;
+	text-align: center;
 }
+
+.item-description .title {
+	text-align: left;
+}
+
 .title-order {
 	font-family: PT Sans;
 	font-size: 30px;
 	line-height: 24px;
 	color: #000000;
 	font-weight: 700;
+}
+
+.form-search {
+	background-color: #000;
+	background-image: url("../img/filter-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.search-type {
+	margin: 0;
+}
+
+.search-type-structure {
+	float: left;
+	width: 240px;
+}
+
+.search-type-housing {
+	float: left;
+	width: 288px;
+}
+
+.search-type-cost {
+	float: right;
+	width: 328px;
+}
+
+.search-sum {
+	float: left;
+	width: 135px;
+}
+
+.search-sort {
+	float: left;
+	width: 363px;
+}
+
+.search-sort-btn {
+	float: right;
+	width: 241px;
+	text-align: right;
+}
+
+.item-picture {
+	float: left;
+	width: 135px;
+}
+
+.item-description {
+	float: left;
+	width: 363px;
+}
+
+.search-rate {
+	float: right;
+	width: 241px;
+}
+
+.item-type {
+	float: left;
+	width: 111px;
+}
+
+.item-cost{
+	float: right;
+	width: 141px;
+}
+
+.item-btn {
+	float: left;
+	width: 50%;
+}
+
+.search-rate {
+	text-align: right;
 }
