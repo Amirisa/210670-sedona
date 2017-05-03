@@ -24,7 +24,7 @@
       <main class="main-menu">
         <form action="https://echo.htmlacademy.ru" method="get" class="form-search clearfix wrapper">
           <fieldset class="search-type search-type-structure">
-            <legend class="seacrh-name">Инфраструктура:</legend>
+            <legend class="search-name">Инфраструктура:</legend>
             <ul class="search-list">
               <li>
                 <input type="checkbox" name="pool" id="pool" checked>
@@ -40,7 +40,7 @@
             </ul> 
           </fieldset>
           <fieldset class="search-type search-type-housing">
-            <legend class="seacrh-name">Тип жилья:</legend>
+            <legend class="search-name">Тип жилья:</legend>
             <ul class="search-list">
               <li>
                 <input type="checkbox" name="hotel" id="hotel" checked>
@@ -56,8 +56,19 @@
             </ul>
           </fieldset>
           <fieldset class="search-type search-type-cost">
-            <legend class="seacrh-name">Стоимость в сутки (р):</legend>
-            <input class="cost-btn" type="submit" value="Показать">
+            <legend class="search-name">Стоимость в сутки (р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </fieldset>
         </form>
         <div class="search-nav wrapper clearfix">
@@ -69,68 +80,62 @@
             <a href="#" class="not-active">По рейтингу</a>
           </div>
           <div class="search-sort-btn">
-            <a href="#" class="sort-btn">&uarr;</a>
-            <a href="#" class="sort-btn-active">&darr;</a>
+            <a href="#" class="sort-btn-up">&uarr;</a>
+            <a href="#" class="sort-btn-down sort-btn-active">&darr;</a>
           </div>
         </div>
         <div class="search-result">
           <article class="search-item clearfix wrapper">
             <div class="item-picture"><img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara Resort & Spa"></div>
             <div class="item-description clearfix">
-              <h3 class="title">Amara Resort & Spa</h3>
+              <h3 class="item-title">Amara Resort & Spa</h3>
               <div class="item-type">Гостиница</div>
               <div class="item-cost">От 4000 р.</div>
               <a class="item-btn item-btn-more" href="#">Подробнее</a>
               <a class="item-btn item-btn-order" href="#">Забронировать</a>
             </div>
             <div class="search-rate">
-              <div class="rate-sum">
-                <img src="img/star.png" alt="">
-                <img src="img/star.png" alt="">
-                <img src="img/star.png" alt="">
-                <img src="img/star.png" alt="">
+              <div class="rate-sum rate-sum-four"></div>
+              <div class="rate-description">
+                <span>Рейтинг: 8,5</span>
               </div>
-              <div class="rate-description">Рейтинг: 8,5</div>
             </div>
           </article>
           <article class="search-item clearfix wrapper">
             <div class="item-picture"><img src="img/desert-hotel.jpg" width="135" height="90" alt="Desert Quail Inn"></div>
             <div class="item-description clearfix">
-              <h3 class="title">Desert Quail Inn</h3>
+              <h3 class="item-title">Desert Quail Inn</h3>
               <div class="item-type">Мотель</div>
               <div class="item-cost">От 3000 р.</div>
               <a class="item-btn item-btn-more" href="#">Подробнее</a>
               <a class="item-btn item-btn-order" href="#">Забронировать</a>
             </div>
             <div class="search-rate">
-              <div class="rate-sum">
-                <img src="img/star.png" alt="">
-                <img src="img/star.png" alt="">
-                <img src="img/star.png" alt="">
+              <div class="rate-sum rate-sum-three"></div>
+              <div class="rate-description">
+                <span>Рейтинг: 8,9</span>
               </div>
-              <div class="rate-description">Рейтинг: 8,9</div>
             </div>
           </article>
           <article class="search-item clearfix wrapper">
             <div class="item-picture"><img src="img/poco-hotel.jpg" width="135" height="90" alt="Villas at poco diablo"></div>
             <div class="item-description clearfix">
-              <h3 class="title">Villas at poco diablo</h3>
+              <h3 class="item-title">Villas at poco diablo</h3>
               <div class="item-type">Апартаменты</div>
               <div class="item-cost">От 2000 р.</div>
               <a class="item-btn item-btn-more" href="#">Подробнее</a>
               <a class="item-btn item-btn-order" href="#">Забронировать</a>
             </div>
             <div class="search-rate">
-              <div class="rate-sum">
-                <img src="img/star.png" alt="">
-                <img src="img/star.png" alt="">
+              <div class="rate-sum rate-sum-two"></div>
+              <div class="rate-description">
+                <span>Рейтинг: 9,2</span>
               </div>
-              <div class="rate-description">Рейтинг: 9,2</div>
             </div>
           </article>
         </div>
       </main>
-      <footer class="main-footer clearfix">
+      <footer class="main-footer main-inner-footer clearfix">
         <section class="footer-contacts">
           <a href="#" class="contacts">#visitsedona</a>
         </section>
