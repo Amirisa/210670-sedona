@@ -1,3 +1,4 @@
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -14,7 +15,7 @@
         		<li><a href="#">Информация</a></li>
         		<li><a href="#">Фото и видео</a></li>
         		<li><a href="#">Карта штата</a></li>
-        		<li><a href="#">Гостиницы</a></li>
+        		<li><a href="catalog.html">Гостиницы</a></li>
         	</ul>
         	<div class="header-logo">
         		<img src="img/logo.png" width="138" height="70" alt="City of Sedona">
@@ -29,7 +30,7 @@
           <div class="feauture-basic-town">
             <h3 class="title">Настоящий городок</h3>
             <span class="basic-number">&ndash; №1 &ndash;</span>
-            <p class="basic-descript">Седона &ndash; не аттрацион для туристов, там течет своя жизнь</p>
+            <p class="basic-descript">Седона &ndash; не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="picture-town">
             <img src="img/town.jpg" width="800" height="256" alt="Вид города">
@@ -42,11 +43,11 @@
         	</div>
         	<div class="feauture-food">
         	  <h3 class="title-black">Еда</h3>
-        	  <p class="feauture-descript">Всегда заказыайте фирменный бургер,<br> вы не разочаруетесь!</p>
+        	  <p class="feauture-descript">Всегда заказыайте фирменный бургер, вы не разочаруетесь!</p>
         	</div>
         	<div class="feauture-souvenir">
         	  <h3 class="title-black">Сувениры</h3>
-        	  <p class="feauture-descript">Не только китайского, но и местного<br> производства!</p>
+        	  <p class="feauture-descript">Не только китайского, но и местного производства!</p>
         	</div>
         </section>
   			<section class="feautures mount clearfix">
@@ -83,27 +84,27 @@
     			<form action="https://echo.htmlacademy.ru" method="get" class="order-form-choise clearfix">
     			  <fieldset class="arrive">
     				  <label for="date-arrive" class="form-label">Дата заезда:</label>
-    				  <input type="text" name="date-arrive" id="date-arrive" value=" 24 апреля 2017">
+    				  <input type="text" name="date-arrive" id="date-arrive" placeholder="24 апреля 2017">
     				  <input type="button" name="btn-calendar" class="btn-calendar">
     				</fieldset>
     				<fieldset class="depart">
     				  <label for="date-depart" class="form-label">Дата выезда:</label>
-    				  <input type="text" name="date-depart" id="date-depart" value="4 июля 2017">
+    				  <input type="text" name="date-depart" id="date-depart" placeholder="4 июля 2017">
     				  <input type="button" name="btn-calendar" class="btn-calendar">
     				</fieldset>
     				<fieldset class="adult">
     				  <label for="adult" class="form-label">Взрослые:</label>
-    				  <input type="button" name="btn-minus" class="btn-minus" value="-">
-    				  <input type="text" name="adult" id="adult" value="2">
-    				  <input type="button" name="btn-plus" class="btn-plus" value="+">
+    				  <button type="button" name="btn-minus" class="btn-minus" value="-"></button>
+    				  <input type="text" name="adult" id="adult" placeholder="2">
+    				  <button type="button" name="btn-plus" class="btn-plus" value="+"></button>
     				</fieldset>
     				<fieldset class="children">
     				  <label for="children" class="form-label">Дети:</label>
-    				  <input type="button" name="btn-minus" class="btn-minus" value="-">
-     				  <input type="text" name="children" id="children" value="0">
-     				  <input type="button" name="btn-plus" class="btn-plus" value="+">
+    				  <button type="button" name="btn-minus" class="btn-minus" value="-"></button>
+     				  <input type="text" name="children" id="children" placeholder="0">
+     				  <button type="button" name="btn-plus" class="btn-plus" value="+"></button>
     				</fieldset>
-    				<input class="btn" type="submit" value="Найти">
+    				<button class="btn" type="submit">Найти</button>
     			</form>
       	</div>
         <div class="map">
