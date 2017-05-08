@@ -338,6 +338,11 @@ ul {
 }
 
 .order-form-choise {
+	display: none;
+}
+
+.order-form-choise-show {
+	display: block;
 	text-align: left;
 	width: 568px;
 	margin-left: -284px;
@@ -348,6 +353,8 @@ ul {
 	padding: 56px 55px;
 	background-color: #ffffff;
 	box-shadow: 0 3px 10px 0 #a1a2a2;
+	animation-name: bounce;
+	animation-duration: 0.6s;
 }
 
 .order-form-choise fieldset {
@@ -371,6 +378,10 @@ ul {
 	font-weight: 700;
 	border: none;
 	padding: 8px 11px;
+}
+
+.order-form-choise input[type="button"] {
+	font-size: 0;
 }
 
 .order-form-choise input[type="text"]:hover {
@@ -424,6 +435,7 @@ ul {
 	background-color: transparent;
 	background-position: 0 0;
 	cursor: pointer;
+	font-size: 0;
 }
 
 .btn-calendar:hover {
@@ -592,7 +604,6 @@ ul {
 
 .main-footer {
 	position: relative;
-	margin-top: -126px;
 	text-align: center;
 	padding-right: 72px;
 	padding-left: 72px;
@@ -600,10 +611,6 @@ ul {
 	padding-bottom: 36px; 
 	box-sizing: border-box;
 	background-color: rgba(255,255,255, 0.9);
-}
-
-.main-inner-footer {
-	margin-top: 0;
 }
 
 .footer-contacts {
@@ -720,6 +727,7 @@ ul {
 	background-image: url("../img/filter-background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 0 18%;
 	color: #ffffff;
 }
 
@@ -1148,4 +1156,34 @@ button:active,
 button:focus {
 	border: none;
 	outline: none;
+}
+
+@keyframes bounce {
+	0% { transform: translateY(-100px); }
+	70% { transform: translateY(100px); }
+	90% { transform: translateY(-10px); }
+	100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+	0%, 100% { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+	20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
+}
+
+.map {
+	background: #f2f1ef url(../img/map.jpg) no-repeat center;
+	height: 473px;
+}
+
+.map iframe {
+	display: block;
+	border: none;
+	width: 100%;
+	height: 593px;
 }
