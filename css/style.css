@@ -13,10 +13,6 @@ img {
 	height: auto;
 }
 
-/** {
-	outline: 2px solid red;
-}*/
-
 .clearfix::after {
 	content: "";
   display: table;
@@ -420,17 +416,15 @@ ul {
 	vertical-align: middle;
 }
 
-.arrive .form-label {
-	margin-right: 21px;
+.arrive .form-label,
+.depart .form-label {
+	width: 112px;
 }
 
-.depart .form-label {
-	margin-right: 18px;
-}
 
 .arrive input[id="date-arrive"],
 .depart input[id="date-depart"] {
-	width: 348px;
+	width: 346px;
 	padding: 8px 35px 8px 13px;
 	box-sizing: border-box;
 	text-transform: uppercase;
@@ -959,7 +953,7 @@ ul {
 	text-decoration: none;
 	color: #ffffff;
 	font-weight: 700;
-	padding: 3px 16px;
+	padding: 4px 16px 2px;
 	margin-right: 4px;
 }
 
