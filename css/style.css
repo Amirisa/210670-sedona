@@ -1172,6 +1172,8 @@ input[type="checkbox"]:disabled + label {
 	outline: none;
 }
 
+/*анимация*/
+
 @keyframes bounce {
 	0% { transform: translateY(-100px); }
 	70% { transform: translateY(100px); }
