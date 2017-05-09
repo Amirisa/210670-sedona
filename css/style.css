@@ -15,8 +15,8 @@ img {
 
 .clearfix::after {
 	content: "";
-  display: table;
-  clear: both;
+    display: table;
+    clear: both;
 }
 
 .main-container {
@@ -277,7 +277,7 @@ ul {
 }
 
 .row {
-  background: #eeeeee;
+    background: #eeeeee;
 }
 
 .row .title-black {
@@ -522,15 +522,15 @@ ul {
 
 .btn-minus::before {
 	display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -1px;
-  margin-left: -5px;
-  content: "";
-  width: 11px;
-  height: 3px;
-  background-color: #a9a9a9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -5px;
+    content: "";
+    width: 11px;
+    height: 3px;
+    background-color: #a9a9a9;
 }
 
 .btn-plus {
@@ -549,15 +549,15 @@ ul {
 .btn-plus::before,
 .btn-plus::after {
 	display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -1px;
-  margin-left: -5px;
-  content: "";
-  width: 11px;
-  height: 3px;
-  background-color: #a9a9a9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -5px;
+    content: "";
+    width: 11px;
+    height: 3px;
+    background-color: #a9a9a9;
 }
 
 .btn-plus::after {
@@ -626,7 +626,7 @@ ul {
 	float: left;
 	width: 240px;
 	padding-top: 13px;
-  padding-left: 13px;
+    padding-left: 13px;
 	margin-right: 87px;
 	box-sizing: border-box;
 }
@@ -690,7 +690,7 @@ ul {
 	float: right;
 	width: 240px;
 	padding-top: 5px;
-  padding-right: 9px;
+    padding-right: 9px;
 }
 
 .copyright {
@@ -966,7 +966,7 @@ ul {
 }
 
 .item-btn-more:active {
-  background-color: #5496bd;
+    background-color: #5496bd;
 	color: #94b9d2;
 }
 
@@ -979,7 +979,7 @@ ul {
 }
 
 .item-btn-order:active {
-  background-color: #503e33;
+    background-color: #503e33;
 	color: #857871;
 }
 
@@ -1051,8 +1051,8 @@ input[type="checkbox"]:checked + label::before {
 
 input[type="checkbox"]:disabled + label::before,
 input[type="checkbox"]:checked:disabled + label::before {
-  cursor: default;
-  filter: brightness(40%);
+    cursor: default;
+    filter: brightness(40%);
 }
 
 input[type="checkbox"]:disabled + label {
@@ -1063,108 +1063,108 @@ input[type="checkbox"]:disabled + label {
 /*сложный фильтр*/
 
 .price-controls {
-  position: relative;
-  margin-bottom: 20px;
-  font-size: 0;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+    position: relative;
+  	margin-bottom: 20px;
+  	font-size: 0;
+  	border: 2px solid #ffffff;
+  	border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 2px;
-  height: 22px;
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+	content: "";
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+	transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 31px;
-  vertical-align: top;
-  cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 31px;
+    vertical-align: top;
+    cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+    width: 90px;
+    padding-left: 65px;
 }
 
 .price-controls .max-price {
-  padding-left: 55px;
+    padding-left: 55px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
-  color: inherit;
-  font: inherit;
-  background: none;
-  border: none;
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
 }
 
 .range-controls {
-  position: relative;
-  margin-bottom: 32px;
+    position: relative;
+    margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
-  background: #ffffff;
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+    background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+    left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+    left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 82px;
-  padding: 6px 35px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+    display: block;
+    margin: 0 82px;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
-  background: #ffffff;
+    color: #000000;
+    background: #ffffff;
 }
 
 .btn-transparent:active,
