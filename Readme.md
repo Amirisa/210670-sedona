@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Анастасия Лесухина](https://up.htmlacademy.ru/htmlcss/17/user/210670).
+* Студент: [Анастасия Ярикова](https://up.htmlacademy.ru/htmlcss/17/user/210670).
 * Наставник: [Елена Арутюнян] (https://htmlacademy.ru/profile/id106442).
 
 ---
